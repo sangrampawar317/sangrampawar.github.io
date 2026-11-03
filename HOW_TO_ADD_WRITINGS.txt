@@ -1,0 +1,36 @@
+# How to Add and Edit Your Own Poetry & Articles
+
+You have complete control over your writings. There are **zero** AI-generated or placeholder articles.
+
+### 📝 To Add Your Poetry or Article:
+1. Open the folder `sangram-pawar-personal-portfolio/`.
+2. Open the file `js/main.js` with Notepad, TextEdit, or VS Code.
+3. Look for line 48:
+   ```javascript
+   const myWritings = [
+   ```
+4. Paste your poem or article inside the brackets `[` and `]`, like this:
+
+```javascript
+  const myWritings = [
+    {
+      id: 1,
+      title: "तुमच्या कवितेचे किंवा लेखाचे नाव (Title)",
+      category: "poetry", // Type 'poetry' for poems, or 'article' for essays
+      categoryLabel: "Poetry (कविता)",
+      date: "2026",
+      readTime: "2 min read",
+      excerpt: "कवितेची किंवा लेखाची एक ओळ सारांश (Brief 1-line summary)",
+      content: `
+        <div class="poetry-box">
+येथे तुमची कविता किंवा लेख लिहा.
+प्रत्येक ओळ नवीन ओळीवर टाका.
+जसे तुम्हाला हवे तसे स्वरूप द्या.
+        </div>
+      `
+    }
+  ];
+```
+
+5. Save the file (`Ctrl + S` or `Cmd + S`).
+6. Refresh `index.html` in your browser. Your poem or article will automatically appear with its full interactive popup reader and search filter!
